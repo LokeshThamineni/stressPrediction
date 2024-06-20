@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Login</title>
+        <style>
+            body {
+              background-image: url('static/img4.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <br><br>
+            <div><p style="color:whitesmoke;border-color: crimson;border-radius: 1%; font-stretch: solid;font-size:50px"><u><b>HUMAN STRESS LEVEL PREDICTION</b></u> </p></div>
+            <div><p style="color:whitesmoke;border-color: crimson;border-radius: 1%; font-stretch: solid;font-size:50px"><u><b>BASED ON SLEEPING HABITS</b></u> </p></div><br><br><br><br><br><br><br><br><br><br><br><br>
+            {% if name %}
+            <p style="color:antiquewhite;font-size:30px">You are logged in as {{ name }}.<a href = "/logout">Logout</a></p>
+            {% else %}
+                <p style="color:antiquewhite;font-size:30px">Kindly  <a href = "/login">Log in</a> or <a href = "/reg">Register</a></p>
+            {% endif %}
+            
+        </center>
+   
+
+    </body>
+</html>
+    

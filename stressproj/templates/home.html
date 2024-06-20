@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>Home</title>
+        <style>
+            body {
+              background-image: url('static/img5.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+        </style>
+        
+    </head>
+    <body >
+
+        <center>
+
+        <h1> Human Stress Level Prediction for the Following day</h1>
+        <h1> based on sleep parameters</h1><br>
+        <br>
+        <img src='static\sleep.jpg' width = "500" alt="Stress"><br><br>
+
+        <form method="POST", action="/predict">
+            <b> 
+            <table>
+                <tr>
+                    <td>Snoring range</td> 
+                    <td>:<input type="text", name='a', placeholder="snors/sleep"></td><br<br>
+                </tr>
+                <tr>
+                    <td>Respiration rate</td> 
+                    <td>:<input type="text", name='b', placeholder="breaths/min"></td><br<br>
+                </tr>
+                <tr>
+                    <td>Body Temperature</td> 
+                    <td>:<input type="text", name='c', placeholder="in F"></td><br<br>
+                </tr>
+                <tr>
+                    <td>Limb Movement</td> 
+                    <td>:<input type="text", name='d', placeholder="movements/sleep"></td><br<br>
+                </tr>
+                <tr>
+                    <td>Blood Levels</td> 
+                    <td>:<input type="text", name='e', placeholder="%"></td><br<br>
+                </tr>
+                <tr>
+                    <td>Eye Movement</td> 
+                    <td>:<input type="text", name='f', placeholder=""></td><br<br>
+                </tr>
+                <tr>
+                    <td>Sleeping Hours</td> 
+                    <td>:<input type="text", name='g', placeholder="no. of hours"></td><br<br>
+                </tr>
+                <tr>
+                    <td>Heart Rate</td> 
+                    <td>:<input type="text", name='h', placeholder="beats/min"></td><br<br>
+                </tr>
+
+
+            </table>
+            </b>
+            <b><input type="submit" ,  value='PREDICT' style="width:100px; height:50px; font-size: larger;border-color: blueviolet;background-color:darkorchid"></b>
+        </form>
+
+        
+        <br><br>
+        <a style="color:crimson" href = "/logout"><b>Logout</b></a>
+
+    </center>
+
+    </body>
+</html>

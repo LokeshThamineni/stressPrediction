@@ -1,0 +1,14 @@
+img{
+    width: 300%;
+    height: auto;
+}
+.container{
+    display:center;
+    align-content: center;
+}
+.cont {
+    background-image: url('static/img4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }

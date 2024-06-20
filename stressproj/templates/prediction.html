@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            Prediction
+        </title>
+        <link href="style.css" rel="stylesheet">
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1> <u>PREDICTION</u> :  </h1>
+
+    {%if data == 0%}
+    <h1>Low Stress</h1>  
+    <img src='static\low.png' width="600"><br>
+    <p>You are gonna be having low levels of stress probably. So, nothing to worry about your day.</p>
+    
+    
+
+
+    {%elif data == 1%}
+    <h1>Medium Low Stress</h1>
+    <img src='static\low_med.jpg' width="600"><br>
+    <p>you gonna experience some healthy level of stress. It won't be harmful but keep things simple with a smile.</p>
+
+    {%elif data == 2%}
+    <h1>Medium Stress</h1>
+    <img src='static\medium.jpg' width="600"><br>
+    <p>As you may experience some medium level of stress, its better to meditate for a while and start your day.</p>
+
+    {%elif data == 3%}
+    <h1>Medium High Stress</h1>
+    <img src='static\med_high.jpg' width="600"><br>
+    <p>This unhealthy level of stress will lead to the degradation of your performance. Come on smile for a petty reason.<br>
+    Here comes a joke "I never knew what happiness was until I got married- and then it was too late :-)".</p>
+    
+    {%else %}
+    <h1>High Stress</h1>
+    <img src='static\high.jpg' width="600"><br>
+    <p>This unhealthy level of stress will lead to the degradation of your performance. Come on smile for any reason.<br>
+    Here comes a joke "What do you call a magician who lost his magic? Ian." :-)</p>
+
+   
+
+    {%endif%}
+
+        <br><br>
+    <p style="font-size:20px;">Go back to <a href='/home'>home page</a> or view <a href='/graphs'>GRAPHS</a>, <a href='/charts'>CHARTS</a></p>
+    
+    <p style="font-size:18px;"><a href='/' color="pink">logout</a></p><br>
+
+
+    </center>
+
+</body>
+
+</html>
